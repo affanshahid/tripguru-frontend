@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taha and Saud</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="./js/jquery-2.2.2.min.js"></script>
+    <script src="./js/handlebars-v4.0.5.js"></script>
+    <script src="./js/drivers.js"></script>
+    <script id="driver-template" type="text/html">
+        <tr>
+            <td>{{name}}</td>
+            <td>{{homeTown}}</td>
+            <td>{{age}}</td>
+        </tr>
+    </script>
+
+    <div class="vertical-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 well">
+                    <h1 class="text-center">Driver list</h1>
+                    <table id="driver-table" class="table table-striped">
+                        <tr>
+                            <th>Name</th>
+                            <th>Home-town</th>
+                            <th>Age</th>
+                        </tr>
+                        <!-- Drivers go here -->
+                    </table>
+                    <button class="btn btn-warning btn-block" id="refresh">Refresh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
