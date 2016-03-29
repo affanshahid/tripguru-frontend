@@ -17,7 +17,7 @@ $(function() {
         $.get('/drivers', function(data) {
             for (var i = 0; i < data.length; i++) {
                 var driver = data[i];
-                driver.age = (new Date()).getFullYear() - driver.dob.getFullYear();
+                driver.age = (new Date()).getFullYear() - new Date(driver.dob).getFullYear();
                 var $driver = $(driverTemplate(driver));
                 $driver.hide();
                 driverTable.append($driver);
